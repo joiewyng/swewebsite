@@ -35,18 +35,17 @@ li a {
   height: 70px;
   font-size: 16px;
   text-align: center;
-  line-height: 70px; 
+  line-height: 70px;
   padding: 0px 25px;
 }
 /* li:hover {
   background-color: rgba(169, 168, 169, 0.3);
 } */
 
-/* 
+/*
 li {
   border-left: 0.5px solid #bbb;
 }
-
 li:first-child {
   border-left: none;
 } */
@@ -62,7 +61,7 @@ li:first-child {
   text-align: center;
   color: #000000;
   text-align: center;
-  line-height: 70px; 
+  line-height: 70px;
   padding: 0px 25px;
   height: 70px;
   border: none;
@@ -343,4 +342,19 @@ input{
 /* -------------------------------- JOIN -------------------------------------*/
 .socialIcon{
   border: none;
+}
+
+/* -------------------------------- PND -------------------------------------*/
+.center {
+  display: flex;
+  margin: 10px;
+  position: relative;
+  justify-content: center;
+  /*left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+}
+
+.hidden {
+  display: none !important;
 }
