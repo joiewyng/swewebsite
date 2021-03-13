@@ -5,9 +5,11 @@
 <head>
   <meta charset="utf-8">
   <title>Professional Networking Dinner</title>
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/validation.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -29,6 +31,7 @@
     </div>
   </div>
 
+  <!--
   <div class="buttons">
     <div class="row">
       <div class="col">
@@ -39,10 +42,18 @@
       </div>
     </div>
   </div>
+  -->
+
+  <div class="center">
+    <div class="row">
+      <button type="button" class="btn btn-dark">Students</button>
+      <button type="button" class="btn btn-dark">Companies</button>
+    </div>
+  </div>
 
   <div class="desc">
     <div class="row">
-      <div class="col">
+      <div class="students hidden">
         <p>Students</p>
         <p>Tickets are $15 and may be purchased online with a credit card. The
           dinner consists of a four course meal catered by The Statler, with
@@ -55,7 +66,7 @@
           again. This is a great way to meet company reps and find a summer
           internship, co-op, or full time job.</p>
       </div>
-      <div class="col">
+      <div class="company hidden">
         <p>Company Representatives</p>
         <p>The event will cost $200.00 for the first company representative and
           $180.00 for each additional representative. Please note that each

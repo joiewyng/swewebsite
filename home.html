@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="wrap">
+  <div class="home-page">
 
     <div class="overlay">
       <div class="frontpage"></div>
@@ -58,10 +58,10 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid event-highlights">
 
       <div class="h2 row-heading" id="highlight-header"> Event Highlights</div>
-      <div class="row">
+      <div class="row ">
         <div class="col-lg-4">
           <div class="highlight-container">
             <div class="highlight-image-1">
@@ -124,9 +124,9 @@
         <div class="col-lg-7 rightcol">
           <text class="description">
             Enter your Cornell netID to join our Listserve!
-            <form onSubmit={this.mySubmitHandler}>
+            <form class="subscribe-form" onSubmit={this.mySubmitHandler}>
               <input type="text" />
-              <Button type="submit" variant="secondary">
+              <Button class="submit-btn" type="submit" variant="secondary">
                 Submit
               </Button>
 
