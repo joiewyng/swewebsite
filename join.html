@@ -5,54 +5,63 @@
 <head>
   <meta charset="utf-8">
   <title>Join Us</title>
-  <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <h1>Join Us</h1>
+  <h1 id="joinTitle" class="text-center">Join Us</h1>
   <div class="container">
     <div class="row">
-      <div class="col-6">
-        <h2> Join our listserv
+      <div class="col-5 joinDiv">
+        <h4> Join our listserv
           to stay up to date on SWE events, on campus
           activities, job opportunities, and more!
-        </h2>
-        <label for="exampleInputEmail1">Email address</label>
+        </h4>
+        <label for="joinEMail"></label>
         <input type="email" class="form-control" id="joinEmail" aria-describedby="emailHelp" placeholder="Enter email">
-        <button type="button" class="btn btn-dark">Join</button>
+        <div class="text-center">
+          <button type="button" class="btn btn-dark joinBtn">Join</button>
+        </div>
       </div>
-      <div class="col-6">
-        <h2>Connect with us
+      <div class="col-2"></div>
+      <div class="col-5 joinDiv">
+        <h4>Connect with us
           on social media to keep up on upcoming events and
           to learn more about SWE!
-        </h2>
-        <img name="socialIcon" src="images/facebook_icon.png" alt="Facebook" class="img-thumbnail">
-        <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik"
+        </h4>
+        <div class="text-center">
+          <img name="socialIcon" src="images/facebook_icon.png" alt="Facebook" class="socialMediaIcon">
+          <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik"
            title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
             title="Flaticon"> www.flaticon.com</a> -->
-        <img name="socialIcon" src="images/instagram.png" alt="Instagram" class="img-thumbnail">
-        <!-- Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect"
+          <img name="socialIcon" src="images/instagram.png" alt="Instagram" class="socialMediaIcon">
+          <!-- Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect"
         title="Pixel perfect">Pixel perfect</a> from 
         <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-6">
-        <h2>Become a Committee Member</h2>
-        <h3>Becoming a committee member is a great way to
+      <div class="col-5 joinDiv">
+        <h4 class="text-center">Become a Committee Member</h4>
+        <p class="joinText">Becoming a committee member is a great way to
           become more involved with SWE, network with faculty and employers, and
-          meet more of your fellow SWE members!</h3>
-        <button type="button" class="btn btn-dark">Apply</button>
+          meet more of your fellow SWE members!</p>
+        <div class="text-center">
+          <button type="button" class="btn btn-dark joinBtn">Apply</button>
+        </div>
       </div>
-      <div class="col-6">
-        <h2>Become a Corporate Liaision</h2>
-        <h3>Becoming a liaision is a great way to work alongside leading
+      <div class="col-2"></div>
+      <div class="col-5 joinDiv">
+        <h4 class="text-center">Become a Corporate Liaision</h4>
+        <p class="joinText">Becoming a liaision is a great way to work alongside leading
           companies, gain valuable networking experience with recruiters,
-          and meet fellow SWE members!</h3>
-        <button type="button" class="btn btn-dark">Apply</button>
-
+          and meet fellow SWE members!</p>
+        <div class="text-center">
+          <button type="button" class="btn btn-dark joinBtn">Apply</button>
+        </div>
       </div>
     </div>
   </div>

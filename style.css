@@ -344,3 +344,29 @@ input{
 .socialIcon{
   border: none;
 }
+
+#joinTitle{
+  margin-top:50px;
+  margin-bottom:70px;
+}
+
+.joinDiv{
+  margin-top:50px;
+  margin-bottom:70px;
+}
+
+.joinBtn, .joinBtn:hover, .joinBtn:active, .joinBtn:visited {
+  background-color: #5A5377 !important;
+  border: none !important;
+}
+
+.joinText{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.socialMediaIcon{
+  margin-left:20px;
+  margin-right:20px;
+  margin-top:20px;
+}
