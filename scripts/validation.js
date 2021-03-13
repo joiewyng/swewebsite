@@ -1,15 +1,25 @@
-$(document).ready(function () {
+$("#careerDevelopment").on("input", function() {
+  	 console.log("careerDevelopment selected");
+     if( $(".description").is(":visible") ) {
+       $(".description").addClass("hidden");
+     }
+     else {
 
-  //Showcase ticket form validation
-  $("#student").on("input", function(){
-      $(".student").removeClass("hidden");
-      $("#company").attr("required", true);
-
+       $(".description").removeClass("hidden");
+     }
   })
 
-  $("#company").on("input", function(){
-      $(".student").addClass("hidden");
-      $("#company").attr("required", false);
-  })
+if ( $("#yes").is(':checked') || $("#no").is(':checked') ) {
+      $("#volDietError").addClass("hidden");
+    } else {
+      $("#volDietError").removeClass("hidden");
+      formValid = false;
+    }
 
+document.getElementById('careerDevelopment').addEventListener("click", function() {
+  console.log("careerDevelopment selected");
+}​);​
+
+$("#careerDevelopment").click(function () {
+   $(".careerDevelopment").addClass("block");
 });

@@ -356,5 +356,14 @@ input{
 }
 
 .hidden {
-  display: none !important;
+  display: none;
+}
+
+/* ---------------------------- DIRECTORSHIPS --------------------------------*/
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
 }
