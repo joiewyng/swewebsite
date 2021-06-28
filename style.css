@@ -409,3 +409,12 @@ input{
 .block {
   display: block;
 }
+
+/* ---------------------------- INFO SESSIONS --------------------------------*/
+.infoText{
+  width:80%;
+}
+
+.question{
+  display:inline;
+}

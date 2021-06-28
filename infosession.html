@@ -8,99 +8,113 @@
   <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <h1>Host an information session></h1>
-  <p>If you’re interested in sponsorship, please fill out the form below.
-    For further details, please see our Sponsorship Packet and our FAQ (hotlinked).</p>
-  <p>By hosting an information session, you will automatically become a sponsor
-    for SWE, and conversely, by becoming a sponsor, you will automatically have
-    the ability to host information sessions as according to the sponsorship tier. </p>
+  <div class="container">
+    <h1 class="text-center">Host an information session</h1>
+    <div class="infoText mx-auto">
+      <p class="mt-4">If you’re interested in sponsorship, please fill out the form below.
+        For further details, please see our Sponsorship Packet and our FAQ (hotlinked).</p>
+      <p class="mt-4">By hosting an information session, you will automatically become a sponsor
+        for SWE, and conversely, by becoming a sponsor, you will automatically have
+        the ability to host information sessions as according to the sponsorship tier. </p>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <button type="button" class="btn btn-dark joinBtn">Fill out form</button>
+    </div>
+    <!-- Will customize later -->
 
-  <button type="button" class="btn btn-dark">Fill out form</button>
-  <!-- Will customize later -->
+    <h1 class="text-center mt-5 mb-5"> Frequently Asked Questions </h1>
+    <div>
+      <row>
+        <h3 class="question"> When are the best times to hold an information session? </h3>
+        <button type="button" class="btn btn-dark" onclick="showFAQ()" id="firstButton">+</button>
+      </row>
+    </div>
+    <p id="text"> Classes officially end at 4:25pm each day. Career Services would like to
+      standardize session times, and so we will be offering sessions at 4:30pm, 6:00pm
+      , and 7:30pm. For engineers, Tuesday and Thursday evenings are preliminary
+      (midterm) exam nights. To avoid possible conflicts, please see the fall
+      preliminary exam schedule or fall final exam schedule. Exams for the
+      following courses are large lectures and tend to be busy times for
+      engineers: MATH 1910, 1920, 2930, 2940, PHYS 1112, 2213, 2214, CHEM 2090,
+      CS courses, ENGRD courses, and ENGRI courses. </p>
 
-  <h1> Frequently Asked Questions </h1>
-  <p> When are the best times to hold an information session? </p>
-  <p> Classes officially end at 4:25pm each day. Career Services would like to
-    standardize session times, and so we will be offering sessions at 4:30pm, 6:00pm
-    , and 7:30pm. For engineers, Tuesday and Thursday evenings are preliminary
-    (midterm) exam nights. To avoid possible conflicts, please see the fall
-    preliminary exam schedule or fall final exam schedule. Exams for the
-    following courses are large lectures and tend to be busy times for
-    engineers: MATH 1910, 1920, 2930, 2940, PHYS 1112, 2213, 2214, CHEM 2090,
-    CS courses, ENGRD courses, and ENGRI courses. </p>
+    <h3> How do I gauge the anticipated attendance at a session? </h3>
+    <p> Although we can provide you with a number, we feel that it is better for
+      companies to anticipate their attendance as you will know best what your
+      turnout would be. The average number of students is typically 30. The base
+      prices for the refreshment options are determined by this average number. </p>
 
-  <p> How do I gauge the anticipated attendance at a session? </p>
-  <p> Although we can provide you with a number, we feel that it is better for
-    companies to anticipate their attendance as you will know best what your
-    turnout would be. The average number of students is typically 30. The base
-    prices for the refreshment options are determined by this average number. </p>
+    <h3> When is the latest I can cancel? </h3>
+    <p> One week prior notice to SWE Corporate Relations Directors
+      (cornell.swe.cr@gmail.com) is required for cancellations.
+      Cancellations made 7 days or less than the date of the session will
+      result in a charge of half of the base price of a session. Less than 24
+      hours notice will result in a charge for the full price of the session.
+      If you cancel at least 7 days prior to your scheduled info session,
+      you will be fully refunded. </p>
 
-  <p> When is the latest I can cancel? </p>
-  <p> One week prior notice to SWE Corporate Relations Directors
-    (cornell.swe.cr@gmail.com) is required for cancellations.
-    Cancellations made 7 days or less than the date of the session will
-    result in a charge of half of the base price of a session. Less than 24
-    hours notice will result in a charge for the full price of the session.
-    If you cancel at least 7 days prior to your scheduled info session,
-    you will be fully refunded. </p>
+    <h3> Why did my room reservation change from what was confirmed?</h3>
+    <p> Professors who make requests for academic purposes have priority
+      over any other type of reservation. If such an event happens, we will
+      find the next available location in closest proximity to the original
+      reservation. We will send out emails and announcements to students about
+      the location change. Additionally, we will post signs and have a
+      liaison to redirect students to your new session location the day of your
+      session. </p>
 
-  <p> Why did my room reservation change from what was confirmed?</p>
-  <p> Professors who make requests for academic purposes have priority
-    over any other type of reservation. If such an event happens, we will
-    find the next available location in closest proximity to the original
-    reservation. We will send out emails and announcements to students about
-    the location change. Additionally, we will post signs and have a
-    liaison to redirect students to your new session location the day of your
-    session. </p>
+    <h3> Can I opt to have a closed session for selected interviewees only?</h3>
+    <p> Yes, you can choose to not advertise your session to the general campus
+      community. We will notify Engineering Career Services of your request and
+      they will notify only the list of interviewees.</p>
 
-  <p> Can I opt to have a closed session for selected interviewees only?</p>
-  <p> Yes, you can choose to not advertise your session to the general campus
-    community. We will notify Engineering Career Services of your request and
-    they will notify only the list of interviewees.</p>
+    <h3> When is payment due?</h3>
+    <p> Payment is due one to two weeks after an info session. </p>
 
-  <p> When is payment due?</p>
-  <p> Payment is due one to two weeks after an info session. </p>
+    <h3> How do I pay?</h3>
+    <p> We will send you a payment link and invoice. For tax and federal ID,
+      please email us at cornell.swe.cr@gmail.com.
+    </p>
 
-  <p> How do I pay?</p>
-  <p> We will send you a payment link and invoice. For tax and federal ID,
-    please email us at cornell.swe.cr@gmail.com.
-  </p>
+    <h3> How soon can I expect a confirmation after I submit my request?
+    </h3>
+    <p> Within a week. We will work on getting your request processed as soon
+      as possible. Turnaround time can be as early as 24 hours.
+    </p>
 
-  <p> How soon can I expect a confirmation after I submit my request?
-  <p>
-  <p> Within a week. We will work on getting your request processed as soon
-    as possible. Turnaround time can be as early as 24 hours.
-  </p>
+    <h3> When is the latest I can request to coordinate an information session with SWE?
+    </h3>
+    <p> In order for SWE to provide the highest quality service, all session
+      details must be finalized at least one week prior to the desired date.
+      Ordering food and reserving a room is never a problem, however, it does
+      take one week for room requests to be processed and confirmed. At least a
+      week is necessary to properly publicize an information session and ensure
+      the session has sufficient number of liaisons and volunteers. Since session
+      details may take several days to finalize - especially if you have
+      any questions about the session options - we recommend that session requests
+      are made at least 14 days prior to the desired date.
+    </p>
 
-  <p> When is the latest I can request to coordinate an information session with SWE?
-  <p>
-  <p> In order for SWE to provide the highest quality service, all session
-    details must be finalized at least one week prior to the desired date.
-    Ordering food and reserving a room is never a problem, however, it does
-    take one week for room requests to be processed and confirmed. At least a
-    week is necessary to properly publicize an information session and ensure
-    the session has sufficient number of liaisons and volunteers. Since session
-    details may take several days to finalize - especially if you have
-    any questions about the session options - we recommend that session requests
-    are made at least 14 days prior to the desired date.
-  </p>
-
-  <p> I am interested in the Professional Networking Dinner, how can I register for that?
-  <p>
-  <p> SWE proudly presents our semiannual Professional Networking Dinner.
-    Registration starts about 4-5 months before the Dinner. For more information
-    and to sign up please visit our Professional Networking Dinner page. If you
-    have any questions about this event, please email cornellswe.pnd@gmail.com.
-  </p>
-
-
-
-
+    <h3> I am interested in the Professional Networking Dinner, how can I register for that?
+    </h3>
+    <p> SWE proudly presents our semiannual Professional Networking Dinner.
+      Registration starts about 4-5 months before the Dinner. For more information
+      and to sign up please visit our Professional Networking Dinner page. If you
+      have any questions about this event, please email cornellswe.pnd@gmail.com.
+    </p>
 
 
+  </div>
+
+
+
+
+
+  <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="scripts/faq.js" type="text/javascript"></script>
 </body>
 
 </html>
